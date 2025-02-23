@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <style>
+        body {
+            background-image: url(allu-arjun-pushpa-2-5120x2880-19900.jpg);
+            background-size: cover;
+            color: rgb(9, 153, 236);
+            text-shadow: 0px 0px 8px rgba(11, 114, 139, 0.555);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .glow-text {
+            text-shadow: 0px 0px 10px rgba(5, 253, 117, 0.9);
+        }
+        .social-icons a {
+            
+            text-shadow: 0px 0px 12px rgba(19, 170, 207, 0.74);
+        }
+       
+        .bhaai{
+            color: rgba(14, 239, 247, 0.856);
+        }
+        .name{
+            color: rgb(5, 236, 167);
+            lighting-color: rgba(255, 3, 255, 0.685);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+    </style>
+    <script>
+         function showLuckyNumberInput() {
+            document.getElementById("nameInput").style.display = "none";
+            document.getElementById("luckyNumberInput").style.display = "block";
+        }
+        
+        function validateLuckyNumber() {
+            let luckyNumber = document.getElementById("luckyNumber").value;
+            if (luckyNumber >= 0 && luckyNumber <= 10) {
+                window.location.href = "https://praveeb09.github.io/app-resume-/video.html";
+            } else {
+                alert("Please enter a lucky number between 0 and 10.");
+            }
+        }
+    </script>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container text-center fade-in">
+        <div class="card p-4 shadow-lg text-light" style="max-width: 400px; margin: auto;">
+            <h2 class="mb-3 glow-text"><b>Login</b></h2>
+            <h3 class="name"><b>This is Praveen Kumar</b></h3>
+            <h5>Welcome to my world 😍</h5>
+            <p class="bhaai">Pra07eenX is my first APK app, a biography platform that explores
+                 influential lives, tracking careers, achievements, family, and branding. It provides
+                  real-time updates on life events and business ventures while integrating with
+                   Google Chrome for seamless access to external sources. The app serves as a hub
+                    for preserving and sharing success journeys.</p>
+            
+            <div id="nameInput">
+                <input type="text" id="name" class="form-control mb-3" placeholder="Enter your name" required>
+                <button class="btn btn-primary" onclick="showLuckyNumberInput()">Next</button>
+            </div>
+            
+            <div id="luckyNumberInput" style="display: none;">
+                <input type="number" id="luckyNumber" class="form-control mb-3" placeholder="Enter lucky number (0-10)" min="0" max="10" required>
+                <button class="btn btn-success" onclick="validateLuckyNumber()">Submit</button>
+            </div>
+            
+            <div class="mt-3 social-icons">
+                <a href="https://www.facebook.com/praveent.praveent.1048?mibextid=ZbWKwL" class="me-2"><i class="fab fa-facebook fa-2x text-light"></i></a>
+                <a href="https://x.com/TPraveen476593?t=BJovc-4cCBcAsF5uhxmz9Q&s=09" class="me-2"><i class="fab fa-twitter fa-2x text-light"></i></a>
+                <a href="https://www.instagram.com/praveen_bunny_07/profilecard/?igsh=OWxha2hid21oaWd0" class="me-2"><i class="fab fa-instagram fa-2x text-light"></i></a>
+                <a href="https://www.linkedin.com/in/praveen-kumar-1a57912b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="me-2"><i class="fab fa-linkedin fa-2x text-light"></i></a>
+                <a href="https://github.com/praveeb09"><i class="fab fa-github fa-2x text-light"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
